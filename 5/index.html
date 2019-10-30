@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的爱好</title>
+		<link  rel="shortcut icon" href="img/f4.png"/>
+	</head>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		a:hover{
+			background-color: aqua;
+			height: 42px;
+		}
+		#wang:hover{
+			background-color:red;
+		}
+		#wang{
+			text-shadow: 20px;
+		}
+		.div1{
+			background-color:black;
+			float: left;
+			height: 42px;
+			width: 1263px;
+		}
+		.img1{
+			float: left;
+		}
+		.li{
+			list-style-type: none;
+		}
+		.a{
+			color: gold;
+			height: 56px;
+			width: 212px;
+			float: left;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			font-size: small;
+			font-weight: 1000;
+			line-height:42px;
+		}
+		.div2{
+			width: 1263px;
+			height: 250px;
+			background-color: bisque;
+		}
+		.div2 img{
+			height: 240px;
+			position: absolute;
+			left: 280px;
+			top: 32px;
+		}
+		.div3{
+			background: url(img/2.jpg);
+			background-size: 100%;
+			height: 150px;
+			margin-top: 4px;
+		}
+		.sou{
+			width: 900px;
+			height: 40px;
+			margin-left: 180px;
+			border-radius: 25px;
+			outline: none;
+		}
+		.sou1{
+			width: 200px;
+			height: 50px;
+			border: 2px thick;
+			font-size: xx-large;
+			font-weight: 700;
+			font-style: oblique;
+			font-family: "仿宋";
+			margin: 6px 510px;
+			text-shadow: 3px 3px 2px cornflowerblue;
+		}
+		.div4{
+			background: url(img/timg.jpg);
+		}
+		.div4 i{
+			font-size: 150px;
+			margin-left: 250px;
+			color: cornflowerblue;
+		}
+		#myDIV{
+			-webkit-animation: mymove 2s infinite; /* Chrome, Safari, Opera */
+   			 animation: mymove 2s infinite;
+		}
+		@-webkit-keyframes mymove {
+    50% {color: blueviolet;}
+}
+
+		/* Standard syntax */
+		@keyframes mymove 
+		{
+    		50% {color: #8A2BE2;}
+}
+	</style>
+	<body>
+		<div class="div1">
+			<img src="img/1.png" height="42px" class="img1"/>
+			<ul>
+				<li class="li"><a href="https://www.qidian.com" class="a">小说</a></li>
+				<li class="li"><a href="https://pvp.qq.com" class="a" id="wang" target="_blank">游戏</a></li>
+				<li class="li"><a href="http://movie.le.com" class="a">电影</a></li>
+				<li class="li"><a href="https://www.iqiyi.com" class="a">电视</a></li>
+			</ul>
+			<ul>
+		</div>
+		<div class="div2">
+			<img src="img/百度.png" />
+		</div>
+		<div class="div3">
+			<form>
+				<input type="text" placeholder="                                                                                             爱我一下♬︎*(๑ºั╰︎╯︎ºั๑)♡︎" class="sou"/>
+				<input type="submit" value="搜索" class="sou1"/>
+			</form>
+		</div>
+		<div class="div4">
+			<i id="myDIV">
+				划水  划水
+			</i>
+		</div>
+		<audio src="aLIEz .mp3" autoplay="autoplay"></audio>
+	</body>
+</html>
