@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>JavaScript</title>
+	</head>
+	<style>
+		*{
+			margin: 0 auto;
+		}
+		table{
+			border: 1px solid;
+			border-collapse: collapse;
+		}
+		td{
+			border: 1px solid;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		a{
+			text-decoration: none;
+			color: blueviolet;
+		}
+	</style>
+	
+	<body>
+		<form name="form">
+		<table>
+			<tr id="tr1">
+				<td>输入你的支付宝账号</td>
+				<td>输入你的支付宝密码</td>
+				<td colspan="2"><center>操作</center></td>
+			</tr>
+			<tr id="tr2">
+				<td><input type="text" name="d1"></td>
+				<td><input type="text" name="d2"></td>
+				<td><a href="#" onclick="add()">增加</a></td>
+				<td><a href="#" onclick="now()">显示物件</a></td>
+			</tr>
+	</table>
+	</form>
+	<script type="text/javascript">
+		function add(){
+			var lei1=form.d1.value;
+			var lei2=form.d2.value;
+			var tr1=document.getElementById("tr1")
+			var tr=document.createElement("tr");
+			var td1=document.createElement("td");
+			var td2=document.createElement("td");
+			var td3=document.createElement("td");
+			td3.colSpan="2";
+			father=tr1.parentNode;
+			father.appendChild(tr);
+			if(lei1==""||lei2=="")
+			{
+				alert("无效");
+				return 0;
+			}
+			tr.appendChild(td1);tr.appendChild(td2);tr.appendChild(td3);
+			td1.innerHTML=document.form.d1.value;
+			td2.innerHTML=document.form.d2.value;
+			td3.innerHTML="<center><a href='#' onclick='remove(this)'>删除</a></center>";
+		}
+		function remove(me){
+			var obj=me.parentNode.parentNode.parentNode;
+			obj.parentNode.removeChild(obj);
+		}
+		function now(){
+			alert("爱你，             的钱包？？？？？？，我可不会^-^  ");
+		}
+	</script>
+	</body>
+</html>
