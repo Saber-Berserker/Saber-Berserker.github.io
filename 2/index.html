@@ -1,89 +1,388 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Hello world</title>
-	</head>
-	<body>
-		<table border="1" width="25px" height="15px" style="border-collapse: collapse;">
-			<tr><td colspan="2">考生号:<input type="text" /></td>
-			<td colspan="2">姓名：<input type="text"/></td>
-			<td colspan="2">性别：<input type="text"/></td>
-			<td colspan="2">出生年月：<input type="text"/></td>
-			<td colspan="1" rowspan="4"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568001674767&di=7b89c254116c704148b5874626dcecf0&imgtype=0&src=http%3A%2F%2Fwww.gamemei.com%2Fbackground%2Fuploads%2F170214%2F30-1F2141R11RC.jpg" alt="至尊宝"></td>
-			</tr>
-			
-			<tr>
-				<td colspan="2">准考证号：<input type="text"/></td>
-				<td colspan="2">考生类别：<input type="text"/></td>
-				<td colspan="2">政治面貌：<input type="text"/></td>
-				<td colspan="2">对口类别：<input type="text"/></td>
-			</tr>
-			
-			<tr>
-				<td colspan="2">联系电话：<input type="text"/></td>
-				<td colspan="2">通讯地址：<input type="text"/></td>
-				<td colspan="4";">邮政编码：<input type="text" style=＂font-size:36pt＂&gt/></td>
-				
-			</tr>
-			
-			<tr>
-				<td colspan="1">总分：<input type="text"/></td>
-				<td colspan="1">数学：<input type="text"/></td>
-				<td colspan="1">语文：<input type="text"/></td>
-				<td colspan="1">外语：<input type="text"/></td>
-				<td colspan="1">文/理综：<input type="text"/></td>
-				<td colspan="1">优惠分：<input type="text"/></td>
-				<td colspan="1">专业分：<input type="text"/></td>
-				<td colspan="1">外语口试：<input type="text"/></td>
-			</tr>
-		
-			<tr>
-				<td width="900" colspan="2">第一志愿<select>
-					<option>湘潭大学</option>
-					<option>清华大学</option>
-					<option>北京大学</option>
-				</td>
-				</select>
-				<td width="900" colspan="2">
-					第二志愿<select>
-						<option>中南大学</option>
-						<option>南华大学</option>
-						<option>南开大学</option>
-						
-					</select>
-				</td>
-				<td width="900" colspan="2">是否服从学校调剂<input type="radio" name="1">是
-				<input type="radio" name="1" />否
-				</td>
-				<td width="900" colspan="2">是否服从专业调剂<input type="radio" name="1">是
-				<input type="radio" name="1" />否
-				</td>
-				<th width="1200px">本科一批</th>
-			</tr>
-			
-			<tr>
-				<td colspan="2">第一志愿<select>
-					<option>一个大学</option>
-					<option>两个大学</option>
-					<option>三个大学</option>
-				</select></td>
-				<td colspan="2">
-					第二志愿<select>
-						<option>四个大学</option>
-						<option>五个大学</option>
-						<option>六个大学</option>
-						
-					</select>
-				</td>
-				<td colspan="2">是否服从学校调剂<input type="radio" name="1">是
-				<input type="radio" name="1" />否
-				</td>
-				<td colspan="2">是否服从专业调剂<input type="radio" name="1">是
-				<input type="radio" name="1" />否
-				</td>
-				<th width="800">本科二批</th>
-			</tr></table><br />
-		<input type="submit" value="提交" style="font-size:35px;"style="float: right;"/>
-	</body>
+<head>
+<meta charset="utf-8">
+<title>高考志愿填报</title>
+</head>
+<script>
+	function dian(){
+		alert("提交成功！");
+	}
+</script>
+<body>
+<table border="1" style="border-collapse: collapse;" cellpadding="10"<!--单元格边距-->>
+	<caption><h1>高考志愿填报表</h1></caption>
+	<tr>
+		<th rowspan="4" colspan="2" style="text-align:center;">考生基本信息</th>
+		<th>姓名</th>
+		<th colspan="2" style="text-align:center;"></th>
+		<th>性别</th>
+		<td>
+			<select>
+				<option value="男">男</option>
+				<option value="女">女</option>
+			</select>
+		</td>	
+		<th colspan="2" style="text-align:center;">考生号</th>
+		<th colspan="2" style="text-align:center;"></th>
+		<th colspan="2" style="text-align:center;">出生年月</th>
+		<th colspan="2" style="text-align:center;"></th>
+		<th rowspan="4" colspan="2" style="text-align:center;">一寸照</th>
+	</tr>
+	<tr>
+		<th colspan="2" style="text-align:center;">身份证号</th>
+		<th colspan="3" style="text-align:center;"></th>
+		<th colspan="2" style="text-align:center;">政治面貌</th>
+		<th colspan="2" style="text-align:center;"></th>
+		<th>科类</th>
+		<td>
+			<select>
+				<option value="文科">文科</option>
+				<option value="理科">理科</option>
+			</select>
+		</td>
+		<th>应试语种</th>
+		<td>
+			<select>
+				<option value="英语">英语</option>
+				<option value="其他">其他</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="text-align:center;">家庭住址</th>
+		<th colspan="7" style="text-align:center;"></th>
+		<th colspan="1" style="text-align:center;">电话</th>
+		<th colspan="3" style="text-align:center;"></th>
+	</tr>
+	<tr>
+		<th colspan="2" style="text-align:center;">个人简介</th>
+		<th colspan="11" style="text-align:center;"></th>
+	</tr>
+	<tr>
+		<th colspan="17" style="text-align:center;">本科提前批</th>
+	</tr>
+	<tr>
+		<th rowspan="2" colspan="2" style="text-align:center;">院校代码</th>
+		<th rowspan="2">院校名称</th>
+		<th colspan="12" style="text-align:center;">专业</th>	
+		<th rowspan="2">专业服从</th>
+		<th rowspan="2">院校服从</th>
+	</tr>
+		<tr>
+		<th>代码1</th>
+		<th>专业名称1</th>
+		<th>代码2</th>
+		<th>专业名称2</th>
+		<th>代码3</th>
+		<th>专业名称3</th>
+		<th>代码4</th>
+		<th>专业名称4</th>
+		<th>代码5</th>
+		<th>专业名称5</th>
+		<th>代码6</th>
+		<th>专业名称6</th>
+	</tr>
+	<tr>
+		<th>A</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th>
+			<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+		</th>
+			<td rowspan="2">
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<th>B</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th>
+			<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="17" style="text-align:center;">本科一批（平行志愿）</th>
+	</tr>
+	<tr>
+		<th rowspan="2" colspan="2" style="text-align:center;">院校代码</th>
+		<th rowspan="2">院校名称</th>
+		<th colspan="12" style="text-align:center;">专业</th>	
+		<th rowspan="2">专业服从</th>
+		<th rowspan="2">院校服从</th>
+	</tr>
+		<tr>
+		<th>代码1</th>
+		<th>专业名称1</th>
+		<th>代码2</th>
+		<th>专业名称2</th>
+		<th>代码3</th>
+		<th>专业名称3</th>
+		<th>代码4</th>
+		<th>专业名称4</th>
+		<th>代码5</th>
+		<th>专业名称5</th>
+		<th>代码6</th>
+		<th>专业名称6</th>
+	</tr>
+	<tr>
+		<th>A</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th>
+			<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+			<td rowspan="4">
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<th>B</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+        	<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<th>C</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+			<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<th>D</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+			<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="17" style="text-align:center;">本科二批（平行志愿）</th>
+	</tr>
+	<tr>
+		<th rowspan="2" colspan="2" style="text-align:center;">院校代码</th>
+		<th rowspan="2">院校名称</th>
+		<th colspan="12" style="text-align:center;">专业</th>	
+		<th rowspan="2">专业服从</th>
+		<th rowspan="2">院校服从</th>
+	</tr>
+		<tr>
+		<th>代码1</th>
+		<th>专业名称1</th>
+		<th>代码2</th>
+		<th>专业名称2</th>
+		<th>代码3</th>
+		<th>专业名称3</th>
+		<th>代码4</th>
+		<th>专业名称4</th>
+		<th>代码5</th>
+		<th>专业名称5</th>
+		<th>代码6</th>
+		<th>专业名称6</th>
+	</tr>
+	<tr>
+		<th>A</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+			<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+			<td rowspan="4">
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<th>B</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+	    		<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<th>C</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+				<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<th>D</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+				<td>
+			<select>
+				<option value="服从">服从</option>
+				<option value="不服从">不服从</option>
+			</select>
+		</td>
+	</tr>
+	
+</table>
+<input type="submit" value="提交" onclick="dian()">会有提示。。。。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="重置">
+</body>
 </html>
