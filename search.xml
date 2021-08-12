@@ -1,39 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>游戏推荐</title>
-    <url>/2021/08/10/games/</url>
-    <content><![CDATA[<h2 id="在玩的游戏（部分能玩下去的）"><a href="#在玩的游戏（部分能玩下去的）" class="headerlink" title="在玩的游戏（部分能玩下去的）"></a>在玩的游戏<sub style="font-size:0.5em;">（部分能玩下去的）</sub></h2><h3 id="崩坏三"><a href="#崩坏三" class="headerlink" title="崩坏三"></a><a href="https://www.bh3.com/">崩坏三</a></h3><p><img "" class="lazyload placeholder" data-original="https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/fristflame_1572953538_6108.jpg" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="崩坏三" width="70%" align="bottom" /></img></p>
-<h4 id="崩坏三简介"><a href="#崩坏三简介" class="headerlink" title="崩坏三简介"></a><a href="https://www.bilibili.com/video/BV1aW411P7UJ">崩坏三简介</a></h4><p>在不远的未来，神秘的灾害“崩坏”侵蚀了世界，被崩坏感染的人类，变成了没有思维，只懂破坏的“死士”，它们和从崩坏中诞生的巨大怪物“崩坏兽”，一同对这个世界造成了巨大的威胁。<br>唯一可以抵抗崩坏的，只有一些拥有“崩坏抗体”的少女，只有由她们组成的“女武神”部队。勇敢的少女们穿上冰冷的机甲，拿起沉重的武器，与崩坏战斗着。为世界上所有的美好而战，在被崩坏侵蚀的世界中，由勇敢的少女组成的女武神部队，为守护世界而展开了战斗。</p>
-<h3 id="原神"><a href="#原神" class="headerlink" title="原神"></a><a href="https://ys.mihoyo.com/">原神</a></h3><p><img "" class="lazyload placeholder" data-original="https://webstatic.mihoyo.com/ys/event/e20210721-fab/images/bg.7864be33.jpg" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="原神" width="70%" align="bottom" /></img></p>
-<h4 id="原神简介"><a href="#原神简介" class="headerlink" title="原神简介"></a><a href="https://www.bilibili.com/video/BV1iZ4y137HH">原神简介</a></h4><p>这里是七种元素交汇的幻想世界“提瓦特”。<br>在遥远的过去，人们藉由对神灵的信仰，获赐了驱动元素的力量，得以在荒野中筑起家园。<br>五百年前，古国的覆灭却使得天地变异……<br>如今，席卷大陆的灾难已经停息，和平却仍未如期光临。<br>作为故事的主人公，你从世界之外漂流而来，降临大地。你将在这广阔的世界中，自由旅行、结识同伴、寻找掌控尘世元素的七神，直到与分离的血亲重聚</p>
-<h3 id="王者农药"><a href="#王者农药" class="headerlink" title="王者农药"></a><a href="https://pvp.qq.com/">王者农药</a></h3><p><img "" class="lazyload placeholder" data-original="http://shp.qpic.cn/ishow/2735061617/1623836895_84828260_11275_sProdImgNo_2.jpg/0" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="王者" width="70%" align="bottom" /></img></p>
-<h4 id="王者荣耀简介"><a href="#王者荣耀简介" class="headerlink" title="王者荣耀简介"></a><a href="https://www.bilibili.com/video/BV147411V7wm">王者荣耀简介</a></h4><p>神明乘坐方舟穿越无边的宇宙，降临王者大陆。他们利用宇宙最强大的力量——方舟核心，将传奇英雄的基因注入新人类，创造了那些为人熟知的英雄。依靠方舟核心，十二座奇迹拔地而起，昭示着那个时代的荣光。<br>然而无上的力量滋生欲望，欲望带来战争。暗夜笼罩大陆，奇迹的光芒被掩映。为了防止战争再次降临，神明将方舟核心封印在长安大门之后，留下隐秘的暗示——解封方舟核心的线索，蕴藏在十二奇迹之中。<br>堕世之神窥伺着方舟核心——这一能够让他重获新生的绝世力量。为了守护王者大陆的和平，英雄们踏上解封方舟核心的道路。生存或者毁灭，前路风云变幻，但抵挡不了他们的脚步。出征吧，英雄们。</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hexo d提交出错</title>
+      <link href="/2021/08/12/hexo-problem/"/>
+      <url>/2021/08/12/hexo-problem/</url>
+      
+        <content type="html"><![CDATA[<h2 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h2><ul><li>先是出现错误：<code>error：spawn failed...</code></li><li>大致问题<br>问题大多是因为git进行push或者hexo d的时候改变了一些.deploy_git文件下的内容。</li><li>解决方法<br>1.删除.deploy_git文件夹<br>2.输入<code>git config --global core.autocrlf false</code><br>3.然后，依次执行：<pre class="line-numbers language-none"><code class="language-none">hexo cleanhexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>4.若还是出现问题，重复操作③操作或者全部操作</li></ul>]]></content>
+      
+      
       <categories>
-        <category>推荐</category>
+          
+          <category> 问题解决 </category>
+          
       </categories>
-      <tags>
-        <tag>游戏</tag>
-        <tag>休闲</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/08/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>游戏推荐</title>
+      <link href="/2021/08/10/games/"/>
+      <url>/2021/08/10/games/</url>
+      
+        <content type="html"><![CDATA[<h2 id="在玩的游戏（部分能玩下去的）"><a href="#在玩的游戏（部分能玩下去的）" class="headerlink" title="在玩的游戏（部分能玩下去的）"></a>在玩的游戏<sub style="font-size:0.5em;">（部分能玩下去的）</sub></h2><h3 id="崩坏三"><a href="#崩坏三" class="headerlink" title="崩坏三"></a><a href="https://www.bh3.com/">崩坏三</a></h3><p><img "" class="lazyload placeholder" data-original="https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/fristflame_1572953538_6108.jpg" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="崩坏三" width="70%" align="bottom" /></img></p><h4 id="崩坏三简介"><a href="#崩坏三简介" class="headerlink" title="崩坏三简介"></a><a href="https://www.bilibili.com/video/BV1aW411P7UJ">崩坏三简介</a></h4><p>在不远的未来，神秘的灾害“崩坏”侵蚀了世界，被崩坏感染的人类，变成了没有思维，只懂破坏的“死士”，它们和从崩坏中诞生的巨大怪物“崩坏兽”，一同对这个世界造成了巨大的威胁。<br>唯一可以抵抗崩坏的，只有一些拥有“崩坏抗体”的少女，只有由她们组成的“女武神”部队。勇敢的少女们穿上冰冷的机甲，拿起沉重的武器，与崩坏战斗着。为世界上所有的美好而战，在被崩坏侵蚀的世界中，由勇敢的少女组成的女武神部队，为守护世界而展开了战斗。</p><h3 id="原神"><a href="#原神" class="headerlink" title="原神"></a><a href="https://ys.mihoyo.com/">原神</a></h3><p><img "" class="lazyload placeholder" data-original="https://webstatic.mihoyo.com/ys/event/e20210721-fab/images/bg.7864be33.jpg" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="原神" width="70%" align="bottom" /></img></p><h4 id="原神简介"><a href="#原神简介" class="headerlink" title="原神简介"></a><a href="https://www.bilibili.com/video/BV1iZ4y137HH">原神简介</a></h4><p>这里是七种元素交汇的幻想世界“提瓦特”。<br>在遥远的过去，人们藉由对神灵的信仰，获赐了驱动元素的力量，得以在荒野中筑起家园。<br>五百年前，古国的覆灭却使得天地变异……<br>如今，席卷大陆的灾难已经停息，和平却仍未如期光临。<br>作为故事的主人公，你从世界之外漂流而来，降临大地。你将在这广阔的世界中，自由旅行、结识同伴、寻找掌控尘世元素的七神，直到与分离的血亲重聚</p><h3 id="王者农药"><a href="#王者农药" class="headerlink" title="王者农药"></a><a href="https://pvp.qq.com/">王者农药</a></h3><p><img "" class="lazyload placeholder" data-original="http://shp.qpic.cn/ishow/2735061617/1623836895_84828260_11275_sProdImgNo_2.jpg/0" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="王者" width="70%" align="bottom" /></img></p><h4 id="王者荣耀简介"><a href="#王者荣耀简介" class="headerlink" title="王者荣耀简介"></a><a href="https://www.bilibili.com/video/BV147411V7wm">王者荣耀简介</a></h4><p>神明乘坐方舟穿越无边的宇宙，降临王者大陆。他们利用宇宙最强大的力量——方舟核心，将传奇英雄的基因注入新人类，创造了那些为人熟知的英雄。依靠方舟核心，十二座奇迹拔地而起，昭示着那个时代的荣光。<br>然而无上的力量滋生欲望，欲望带来战争。暗夜笼罩大陆，奇迹的光芒被掩映。为了防止战争再次降临，神明将方舟核心封印在长安大门之后，留下隐秘的暗示——解封方舟核心的线索，蕴藏在十二奇迹之中。<br>堕世之神窥伺着方舟核心——这一能够让他重获新生的绝世力量。为了守护王者大陆的和平，英雄们踏上解封方舟核心的道路。生存或者毁灭，前路风云变幻，但抵挡不了他们的脚步。出征吧，英雄们。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 推荐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 休闲 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2021/08/08/hello-world/"/>
+      <url>/2021/08/08/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 例子 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 示范 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>

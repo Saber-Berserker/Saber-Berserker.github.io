@@ -688,7 +688,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/7.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/img/56444db83700b327088b55ae9216ebe1e1caec87.jpg@1178w_896h_progressive.webp" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
@@ -707,6 +707,15 @@
         </span>
       
 
+      
+        <span class="post-detail-header_categories">
+          <i class="iconfont iconbookmark1"></i> 分类：
+          
+            <a href="/categories/%E4%BE%8B%E5%AD%90/" class="post-detail-header_category">
+              例子
+            </a>
+          
+        </span>
       
 
       
@@ -757,6 +766,18 @@
 
       </div>
       <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/hexo/" class="">
+              hexo
+            </a>
+          
+            <a href="/tags/%E7%A4%BA%E8%8C%83/" class="">
+              示范
+            </a>
+          
+        </div>
         
       </div>
       
@@ -1085,7 +1106,7 @@
     var vm = new Vue({
         el: '#appBgSwiper',
         data: {
-            names: '' || 'fade' || 'fade', // translate-fade fade
+            names: 'fade' || 'fade' || 'fade', // translate-fade fade
             mark: 0,
             img: [],
             bgColor: '',
@@ -1127,7 +1148,7 @@
                 }
             },
             play() {
-                let bgImgDelay = '' || '180000'
+                let bgImgDelay = '180000' || '180000'
                 let delay = parseInt(bgImgDelay) || 180000;
                 this.time = setInterval(this.autoPlay, delay);
             },
@@ -1145,7 +1166,7 @@
             clearInterval(this.time);
         },
         mounted() {
-            let prop = ''|| '';
+            let prop = '/img/24d5400ba520d411cf6d82ea65286e20746739e3.jpg@1178w_679h_progressive.webp,/img/83e1b016a8b7e4aa7e3dad717e5d968c93d18525.jpg@1178w_833h_progressive.webp'|| '';
             let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://') 
             if (isImg) {
                 let img = prop.split(',');
